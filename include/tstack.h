@@ -7,6 +7,7 @@ class TStack {
  private:
   T data[kSize];
   int top_;
+
  public:
   TStack() : top_(-1) {}
   bool IsEmpty() const {
