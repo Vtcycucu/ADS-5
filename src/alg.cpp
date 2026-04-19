@@ -47,6 +47,9 @@ std::string infx2pstfx(const std::string& inf) {
     rs += ' ';
     st.Pop();
   }
+  if (!rs.empty() && rs.back() == ' ') {
+    rs.pop_back();
+  }
   return rs;
 }
 int eval(const std::string& post) {
